@@ -16,10 +16,10 @@
 ---
 
 ##  Screenshots or GIF of the working app
-([Output Screenshots/output1.jpg](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output1.jpg?raw=true))
-![App Screenshot](Output Screenshots/output2.jpg)
-![App Screenshot](Output Screenshots/output3.jpg)
-![App Screenshot](Output Screenshots/output4.jpg)
+![App Screenshot](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output2.jpg?raw=true)
+![App Screenshot](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output3.jpg?raw=true)
+![App Screenshot](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output4.jpg?raw=true)
+
 
 ![App Output GIF](Output Screenshots/ouptput phone gif.gif)
 
