@@ -1,21 +1,31 @@
-# Real-Time Edge Detection Viewer
+🖼️ Real-Time Edge Detection Viewer
 
-##  Features implemented (Android + Web)
-- **Android:**
-  - Camera feed integration using TextureView 
-  - Frame processing via OpenCV (C++) using JNI
-    - Grayscale filter
-    - Canny edge detection
-  - Render processed frames using OpenGL ES 2.0
-  - Real-time performance (≥10–15 FPS)
-- **Web:**
-  - Minimal TypeScript + HTML page
-  - Displays a static processed frame (captured from Android app)
-  - Basic overlay for frame stats (FPS, resolution)
 
----
+✨ Features Implemented
+📱 Android
 
-##  Screenshots or GIF of the working app
+-Camera feed integration using TextureView
+
+-Frame processing via OpenCV (C++) using JNI
+
+-Grayscale filter
+
+-Canny edge detection
+
+-Render processed frames using OpenGL ES 2.0
+
+-Real-time performance (≥10–15 FPS)
+
+🌐 Web
+
+-Minimal TypeScript + HTML page
+
+-Displays a static processed frame (captured from Android app)
+
+-Basic overlay for frame stats (FPS, resolution)
+
+📸 Screenshots / GIFs
+
 ![App Screenshot](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output2.jpg?raw=true)
 
 
@@ -25,40 +35,49 @@
 ![App Screenshot](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output4.jpg?raw=true)
 
 
-![App Output GIF](Output Screenshots/ouptput phone gif.gif)
+![App Output GIF](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/ouptput%20phone%20gif.gif?raw=true)
 
 
----
+⚙️ Setup Instructions
+📱 Android
 
-##  Setup instructions (NDK, OpenCV dependencies)
+-Clone the repository:
 
-### Android
-1. Clone the repository:
-   
-   git clone <repo_url>
-Install Android Studio (latest version recommended)
+-git clone <repo_url>
 
-Install NDK and CMake from SDK Manager
 
-Place OpenCV SDK in the Project folder
+-Install Android Studio (latest version recommended)
 
-Configure CMakeLists.txt to include OpenCV headers and link libraries
+-Install NDK and CMake from SDK Manager
 
-Connect an Android device (minSdk 24) and run the app
+-Place OpenCV SDK in the project folder
 
-Web
-// working
+-Configure CMakeLists.txt to include OpenCV headers and link libraries
 
- Quick explanation of architecture (JNI, frame flow, TypeScript part)
+-Connect an Android device (minSdk 24) and run the app
+
+🌐 Web Viewer
+
+-Open index.html in a browser
+
+-Ensure sample_frame.jpg is in the same folder
+
+-The image will display FPS and resolution overlay
+
+🏗️ Architecture Overview
+
 Frame Flow:
 
+-Camera (Android) → JNI → OpenCV C++ Processing → OpenGL ES Renderer → Display → Web Viewer
 
-Camera (Android) → JNI → OpenCV C++ Processing → OpenGL ES Renderer → Display → Web Viewer
-Android (Java/Kotlin): Captures camera frames and sets up UI/OpenGL surface
 
-JNI: Passes frames between Android and C++ native code
+-Android (Java/Kotlin): Captures camera frames and sets up UI/OpenGL surface
 
-C++ (OpenCV): Processes frames with Grayscale / Canny Edge Detection
+-JNI: Passes frames between Android and C++ native code
+
+-C++ (OpenCV): Processes frames with Grayscale / Canny Edge Detection
+
+
 
 OpenGL ES: Renders processed frames in real-time
 
