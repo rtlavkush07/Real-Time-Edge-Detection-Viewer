@@ -21,7 +21,7 @@ add_library(
 # --- Import prebuilt OpenCV shared lib ---
 add_library(opencv_java4 SHARED IMPORTED)
 set_target_properties(opencv_java4 PROPERTIES
-        IMPORTED_LOCATION "../../../../../sdk/native/lib/${ANDROID_ABI}/libopencv_java4.so"
+        IMPORTED_LOCATION "../../../../../sdk/native/libs/${ANDROID_ABI}/libopencv_java4.so"
 )
 
 # --- Link everything ---
