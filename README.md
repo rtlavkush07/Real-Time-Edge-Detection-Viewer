@@ -16,7 +16,7 @@
 ---
 
 ##  Screenshots or GIF of the working app
-![App Screenshot](Output Screenshots/output1.jpg)
+([Output Screenshots/output1.jpg](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output1.jpg?raw=true))
 ![App Screenshot](Output Screenshots/output2.jpg)
 ![App Screenshot](Output Screenshots/output3.jpg)
 ![App Screenshot](Output Screenshots/output4.jpg)
