@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.realtimeedgedetection"
+    namespace = "com.example.myapplication"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.realtimeedgedetection"
+        applicationId = "com.example.myapplication"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -16,7 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        // ✅ NDK setup for native C++ integration
+        //  NDK setup for native C++ integration
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a")
         }
@@ -76,7 +76,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation("androidx.core:core-ktx:1.12.0")
 
-    // ✅ Add OpenCV for Android
+    //  Add OpenCV for Android
 //    implementation("org.opencv:opencv-android:4.10.0")
 //    implementation(libs.opencv)
     testImplementation(libs.junit)
