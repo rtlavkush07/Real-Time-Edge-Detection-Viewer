@@ -17,7 +17,11 @@
 
 ##  Screenshots or GIF of the working app
 ![App Screenshot](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output2.jpg?raw=true)
+
+
 ![App Screenshot](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output3.jpg?raw=true)
+
+
 ![App Screenshot](https://github.com/rtlavkush07/Real-Time-Edge-Detection-Viewer/blob/main/Output%20Screenshots/output4.jpg?raw=true)
 
 
