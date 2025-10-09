@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10.2)
 
-project("realtimeedgedetection")
+project("myapplication")
 
-# Enable modern C++
+# Enable modern C++ 17
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
@@ -10,7 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # --- OpenCV include & lib directories ---
 include_directories("../../../../sdk/native/jni/include")
 
-# --- Add your native C++ sources ---
+# --- Adding native C++ sources ---
 add_library(
         native-lib
         SHARED

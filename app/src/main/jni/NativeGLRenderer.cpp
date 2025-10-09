@@ -42,7 +42,7 @@ extern "C" {
 
 JNIEXPORT void JNICALL
 Java_com_example_myapplication_gl_NativeGLRenderer_initRenderer(JNIEnv *env, jobject thiz) {
-LOGI("✅ initRenderer called");
+LOGI(" initRenderer called");
 
 GLuint vShader = compileShader(GL_VERTEX_SHADER, VERTEX_SHADER);
 GLuint fShader = compileShader(GL_FRAGMENT_SHADER, FRAGMENT_SHADER);
@@ -63,7 +63,7 @@ glBindTexture(GL_TEXTURE_2D, textureId);
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-// ✅ Bind texture unit 0
+// Bind texture unit 0
 glUseProgram(program);
 glUniform1i(textureHandle, 0);
 }
@@ -78,7 +78,7 @@ jbyte *bytes = env->GetByteArrayElements(data, nullptr);
 frameWidth = width;
 frameHeight = height;
 
-// ✅ ensure buffer has exact size
+//  ensure buffer has exact size
 frameBuffer.assign(bytes, bytes + (width * height));
 
 env->ReleaseByteArrayElements(data, bytes, 0);
@@ -92,17 +92,17 @@ if (frameBuffer.empty() || frameWidth == 0 || frameHeight == 0) return;
 
 glBindTexture(GL_TEXTURE_2D, textureId);
 
-// ✅ ensure correct row alignment
+//  ensure correct row alignment
 glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
 glTexImage2D(GL_TEXTURE_2D, 0, GL_LUMINANCE,
 frameWidth, frameHeight, 0,
 GL_LUMINANCE, GL_UNSIGNED_BYTE, frameBuffer.data());
 
-// ✅ Properly interleaved position + texcoord array
-// ✅ Rotate texture 90° to the right (clockwise)
-// ✅ Rotate 90° clockwise and correct vertical flip
-// ✅ Flip horizontally (no rotation)
+//  Properly interleaved position + texcoord array
+//  Rotate texture 90° to the right (clockwise)
+//  Rotate 90° clockwise and correct vertical flip
+//  Flip horizontally (no rotation)
 const GLfloat vertices[] = {
         -1.f, -1.f,  1.f, 0.f,
         1.f, -1.f,  1.f, 1.f,

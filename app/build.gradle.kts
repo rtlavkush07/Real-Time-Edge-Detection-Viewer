@@ -36,14 +36,15 @@ android {
         }
     }
 
-    // ✅ Enable ViewBinding for easier UI access
+    //  Enable ViewBinding for easier UI access
     buildFeatures {
         viewBinding = true
     }
 
-    // ✅ Link with your native C++ build system
+    //  Link with your native C++ build system
     externalNativeBuild {
         cmake {
+            // path given for CmakeLists.txt
             path = file("src/main/jni/CMakeLists.txt")
         }
     }
@@ -76,9 +77,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation("androidx.core:core-ktx:1.12.0")
 
-    //  Add OpenCV for Android
-//    implementation("org.opencv:opencv-android:4.10.0")
-//    implementation(libs.opencv)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

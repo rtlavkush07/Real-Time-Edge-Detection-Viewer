@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize UI elements
+        // Initialize UI elements here
         textureView = findViewById(R.id.textureView)
         debugText = findViewById(R.id.debugText)
         glSurfaceView = findViewById(R.id.glSurfaceView)
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
         // Test JNI call
         testNative()
-        Log.i("MainActivity", "✅ testNative() called successfully")
+        Log.i("MainActivity", " testNative() called successfully")
 
         // Listen for TextureView ready state
         textureView.surfaceTextureListener = object : TextureView.SurfaceTextureListener {
@@ -196,14 +196,14 @@ class MainActivity : AppCompatActivity() {
                         }
 
                         override fun onConfigureFailed(session: CameraCaptureSession) {
-                            Log.e("Camera", "❌ Capture session configuration failed")
+                            Log.e("Camera", " Capture session configuration failed")
                         }
                     }, null)
             }
 
             override fun onDisconnected(camera: CameraDevice) {}
             override fun onError(camera: CameraDevice, error: Int) {
-                Log.e("Camera", "❌ Camera error: $error")
+                Log.e("Camera", " Camera error: $error")
             }
         }, null)
     }

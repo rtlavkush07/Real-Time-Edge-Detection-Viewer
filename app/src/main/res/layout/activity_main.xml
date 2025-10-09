@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Camera Preview -->
+    <!-- Camera Preview using TextureView -->
     <TextureView
         android:id="@+id/textureView"
         android:layout_width="match_parent"

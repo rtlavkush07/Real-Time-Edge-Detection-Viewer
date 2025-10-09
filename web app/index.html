@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edge Detection Web Viewer</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    img { border: 1px solid #ccc;
+        
+        width: 300px;
+        height: 500px;
+        max-width: 50%; }
+    .stats { margin-top: 10px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Edge Detection Frame</h1>
+  <img id="frame" src="output3.jpg" alt="Processed Frame">
+  <div class="stats" id="stats">FPS: -- | Resolution: --</div>
+
+  <script src="index.js"></script>
+</body>
+</html>

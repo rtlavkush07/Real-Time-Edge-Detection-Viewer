@@ -9,7 +9,7 @@ using namespace cv;
 
 extern "C" JNIEXPORT void JNICALL
 Java_com_example_myapplication_MainActivity_testNative(JNIEnv *env, jobject thiz) {
-LOGI("✅ Native code successfully called!");
+LOGI("Native code successfully called!");
 }
 
 extern "C"
